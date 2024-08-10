@@ -28,9 +28,54 @@
     <script>
         history.scrollRestoration = "manual"
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+<style>
+ .horizontal-list-with-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between items */
+}
+
+.horizontal-list-with-icons span {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid #f9f2f2;
+    border-radius: 5px;
+    height: 150px;
+    width: 130px; /* Adjust width as needed */
+    text-align: center; /* Center the text */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.horizontal-list-with-icons i {
+    margin-bottom: 5px; /* Space between icon and text */
+    color: orange; /* Set the icon color to orange */
+    font-size: 34px; /* Adjust icon size */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.horizontal-list-with-icons span:hover {
+    transform: translateY(-5px); /* Lift the span slightly */
+    background-color: #f0f0f0; /* Lighten the background */
+ /* Change border color to orange */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhance box shadow on hover */
+}
+
+.horizontal-list-with-icons span:hover i {
+    transform: scale(1.2); /* Slightly increase icon size */
+    color: #31ca23; /* Darker orange color */
+}
+</style>
 
     <style>
+        
         .loading-wrap {
             display: flex;
             pointer-events: auto
@@ -2361,9 +2406,10 @@
                                     </div>
                                 </div>
                                 <div hero-anim="" class="hero-cd6-ct4">
-                                    <h1 class="hero-heading-fs1">Delivering impact across your insurance business</h1>
+                                    <h1 class="hero-heading-fs1">
+                                        performing research,design development</h1>
                                     <div class="mt2-5">
-                                        <p class="hero-txt-fsp4">Double your business, improve your service offering, and give time back to your team.</p>
+                                        <p class="hero-txt-fsp4">"Empowering Your Vision with Innovative Solutions. Discover Products Designed to Propel Your Business Forward."</p>
                                     </div>
                                     <div hero-btn="" class="btn-mt2-5">
                                         <div class="button-group">
@@ -2393,7 +2439,7 @@
                                             <div class="card-anchor-abs">
                                                 <a href="#productivity" bk="trans" hov-arrow="" class="card w-inline-block">
                                                     <div class="card-padding-pd1-5">
-                                                        <div class="fsp4">Unlock broker<br/>productivity</div>
+                                                        <div class="fsp4">1.Vision Alignment <br> Workshops</div>
                                                         <div class="w-layout-vflex mt2">
                                                             <div class="arrow-btn">
                                                                 <div class="arrow-btn-direction is-anchor">
@@ -2420,7 +2466,7 @@
                                                 <a href="#productivity" hov-arrow="" bk="lightblue" class="card is-anchor-rel w-inline-block">
                                                     <div class="anchor-padding-pd1">
                                                         <div class="anchor-txt-wrap">
-                                                            <div class="fsp2">Unlock broker productivity</div>
+                                                            <div class="fsp2"></div>
                                                             <div class="arrow-btn">
                                                                 <div class="arrow-btn-direction is-anchor">
                                                                     <div class="arrow-btn-wrap smaller">
@@ -2446,7 +2492,7 @@
                                             <div class="card-anchor-abs">
                                                 <a href="#" bk="trans" hov-arrow="" class="card w-inline-block">
                                                     <div class="card-padding-pd1-5">
-                                                        <div class="fsp4">Accelerate broker<br/>recruiting</div>
+                                                        <div class="fsp4">2.Consumer/Customer <br> Listing</div>
                                                         <div class="w-layout-vflex mt2">
                                                             <div class="arrow-btn">
                                                                 <div class="arrow-btn-direction is-anchor">
@@ -2473,7 +2519,7 @@
                                                 <a href="#" hov-arrow="" bk="lightblue" class="card is-anchor-rel w-inline-block">
                                                     <div class="anchor-padding-pd1">
                                                         <div class="anchor-txt-wrap">
-                                                            <div class="fsp2">Accelerate broker recruiting</div>
+                                                            <div class="fsp2"></div>
                                                             <div class="arrow-btn">
                                                                 <div class="arrow-btn-direction is-anchor">
                                                                     <div class="arrow-btn-wrap smaller">
@@ -2499,7 +2545,7 @@
                                             <div class="card-anchor-abs">
                                                 <a href="#scale" bk="trans" hov-arrow="" class="card w-inline-block">
                                                     <div class="card-padding-pd1-5">
-                                                        <div class="fsp4">Scale operations <br/>effortlessly</div>
+                                                        <div class="fsp4">3.Strategy Transformation<br> and Optimization</div>
                                                         <div class="w-layout-vflex mt2">
                                                             <div class="arrow-btn">
                                                                 <div class="arrow-btn-direction is-anchor">
@@ -2526,7 +2572,7 @@
                                                 <a href="#scale" hov-arrow="" bk="lightblue" class="card is-anchor-rel w-inline-block">
                                                     <div class="anchor-padding-pd1">
                                                         <div class="anchor-txt-wrap">
-                                                            <div class="fsp2">Scale operations effortlessly</div>
+                                                            <div class="fsp2"></div>
                                                             <div class="arrow-btn is-anchor">
                                                                 <div class="arrow-btn-direction is-anchor">
                                                                     <div class="arrow-btn-wrap smaller">
@@ -2559,11 +2605,11 @@
                                 <div class="section-padding-pv4">
                                     <div class="section-grid">
                                         <div class="cd6">
-                                            <h2 ch15="">Unlock broker productivity</h2>
+                                            <h2 ch15="">Vision Alignment Workshops</h2>
                                         </div>
                                         <div class="cd6">
-                                            <p twb="" class="fsp4">Empower your brokers to focus on what they do best: serve clients.</p>
-                                            <div class="mt2">
+                                            <p twb="" class="fsp4">In the initial phase, we engage deeply with your team to understand your specific business needs, objectives, and potential knowledge gaps. Through collaborative workshops, we align on project scope, business context, and set clear goals for a strategic blueprint.</p>
+                                            <!-- <div class="mt2">
                                                 <div class="number-line-wrap">
                                                     <div count-siv="" class="counter-wrap min-width is-02">
                                                         <div class="stat-fs2 count">90</div>
@@ -2572,7 +2618,7 @@
                                                     <div twb="" class="fsp3">growth in production per year for brokers after partnering with Spark</div>
                                                     <div class="line-abs-left"></div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -2594,38 +2640,45 @@
                                                                 <div class="div-block-9">
                                                                     <div class="card-scroll-txt is-active">
                                                                         <div move-child="" class="mwxxl">
-                                                                            <div class="mb2">
-                                                                                <div twb="" class="fs2">Manage all clients and carriers in one platform</div>
+                                                                            <div class="mb2 mt2">
+                                                                                <div twb="" class="fs2">Tried-and-Proven Technique</div>
                                                                             </div>
                                                                             <div class="mb2">
-                                                                                <div ch30="" twb="" class="fsp1">Spark’s modern platform empowers brokers to manage clients and carriers all in one place. No more bouncing between CRMs, quoting &amp; enrollment software, and carrier portals.</div>
+                                                                                <div ch30="" twb="" class="fsp1">We begin by diving deep into your business challenges, asking insightful questions to craft tailored strategies. By integrating various methodologies and leveraging AI, we create custom solutions for your business needs.
+
+                                                                                    Ready for a new adventure? At myeNovation, we value individuals with diverse skills and a strong work ethic who embrace challenges and excel at problem-solving..
+                                                                                    
+                                                                                    </div>
                                                                             </div>
-                                                                            <div class="number-line-wrap">
+                                                                            <!-- <div class="number-line-wrap">
                                                                                 <div class="stat-fs2">65%</div>
                                                                                 <div twb="" class="fsp3">of partner brokers log into the Spark platform daily</div>
                                                                                 <div class="line-abs-left"></div>
-                                                                            </div>
+                                                                            </div> -->
                                                                             <div class="card-scroll-content-mobile"></div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="card-scroll-txt">
                                                                         <div move-child="" class="mwxxl">
-                                                                            <div class="mb2">
-                                                                                <div twb="" class="fs2">Supercharge your client experience</div>
+                                                                            <div class="mb2 mt2">
+                                                                                <div twb="" class="fs2"><h2>Innovative Solutions</h2></div>
                                                                             </div>
                                                                             <div class="mb2">
-                                                                                <div ch30="" twb="" class="fsp1">Our US-based, W2 client services team operates an extension of your agency to ensure that every client gets the personal, hands-on support they deserve. All support requests
-                                                                                    are handled directly through the Spark platform, to guarantee full transparency and accountability.</div>
+                                                                                <div ch30="" twb="" class="fsp1">At GreenTin, we start by thoroughly understanding your business challenges, posing insightful questions to develop tailored strategies. Through the integration of cutting-edge methodologies and advanced AI, we deliver bespoke solutions designed to meet your unique business needs.
+
+                                                                                    Embark on a new journey with MyEnovation. We cherish individuals with diverse talents and a robust work ethic who thrive on challenges and excel in problem-solving.
+                                                                                    
+                                                                                    </div>
                                                                             </div>
-                                                                            <div class="number-line-wrap">
+                                                                            <!-- <div class="number-line-wrap">
                                                                                 <div class="stat-fs2">6</div>
                                                                                 <div twb="" class="fsp3">average years of healthcare customer service experience</div>
                                                                                 <div class="line-abs-left"></div>
-                                                                            </div>
+                                                                            </div> -->
                                                                             <div class="card-scroll-content-mobile"></div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="card-scroll-txt">
+                                                                    <!-- <div class="card-scroll-txt">
                                                                         <div move-child="" class="mwxxl">
                                                                             <div class="mb2">
                                                                                 <div twb="" class="fs2">Elevate your agency marketing</div>
@@ -2636,7 +2689,7 @@
                                                                             </div>
                                                                             <div class="card-scroll-content-mobile"></div>
                                                                         </div>
-                                                                    </div>
+                                                                    </div> -->
                                                                 </div>
                                                                 <div class="card-scroll-nav">
                                                                     <div class="card-scroll-nav-bar is-active"></div>
@@ -2650,16 +2703,16 @@
                                                                         <div class="scroll-card-pd1">
                                                                             <div bk="bluetint" class="card is-scroll-card">
                                                                                 <div class="card-scroll-content-img">
-                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d0_outcomes-broker.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw"
-                                                                                        srcset="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d0_outcomes-broker-p-500.webp 500w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d0_outcomes-broker.webp 800w"
+                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="assets/imgs/logo/try1.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw"
+                                                                                    
                                                                                         alt="" class="img-abs" /></div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="scroll-card-pd1">
                                                                             <div bk="bluetint" class="card is-scroll-card">
                                                                                 <div class="card-scroll-content-img">
-                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d1_office-1.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw"
-                                                                                        srcset="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d1_office-1-p-500.webp 500w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d1_office-1-p-800.webp 800w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d1_office-1-p-1080.webp 1080w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d1_office-1-p-1600.webp 1600w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d1_office-1-p-2000.webp 2000w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d1_office-1-p-2600.webp 2600w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d1_office-1.webp 2731w"
+                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="assets/imgs/logo/NovoConnect_blog_banner.png" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw" height="400px" width="400px"
+                                                                                        
                                                                                         alt="" class="img-abs" /></div>
                                                                             </div>
                                                                         </div>
@@ -2705,7 +2758,7 @@
             <div bk="black" class="section">
                 <div class="img-section-content-wrap">
                     <div class="img-section-content">
-                        <div ch25="" class="fs1">Learn how Joanna Wyckoff saves 40 hours per week on contracting<br/></div>
+                        <div ch25="" class="fs1">A holistic approach to Comprehensive Marketing Strategy<br/></div>
                         <div class="mt3">
                             <div class="button-anim-wrap">
                                 <div class="w-dyn-list">
@@ -2723,8 +2776,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-abs-wrap is-section-bk"><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea88_65a59a12eb393af00d059332_outcomes-banner%20(1).webp" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea88_65a59a12eb393af00d059332_outcomes-banner%2520(1)-p-500.webp 500w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea88_65a59a12eb393af00d059332_outcomes-banner%2520(1)-p-800.webp 800w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea88_65a59a12eb393af00d059332_outcomes-banner%2520(1)-p-1080.webp 1080w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea88_65a59a12eb393af00d059332_outcomes-banner%2520(1)-p-1600.webp 1600w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea88_65a59a12eb393af00d059332_outcomes-banner%2520(1)-p-2000.webp 2000w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea88_65a59a12eb393af00d059332_outcomes-banner%20(1).webp 2400w"
-                        alt="" class="img-abs is-section-bk" /></div>
+                <div class="img-abs-wrap is-section-bk"><img src="assets/imgs/profile/team.png" loading="lazy" sizes="100vw" alt="" class="img-abs is-section-bk" /></div>
             </div>
             <div toggle-parent="" class="sticky-content-wrap">
                 <div id="recruiting" class="outcome-section-anchor">
@@ -2738,7 +2790,7 @@
                                                 <a href="#productivity" hov-arrow="" bk="lightblue" class="card is-anchor-rel w-inline-block">
                                                     <div class="anchor-padding-pd1">
                                                         <div class="anchor-txt-wrap">
-                                                            <div class="fsp2">Unlock broker productivity</div>
+                                                            <div class="fsp2">Vision Alignment<br> Workshops</div>
                                                             <div class="arrow-btn">
                                                                 <div class="arrow-btn-direction is-anchor">
                                                                     <div class="arrow-btn-wrap smaller">
@@ -2765,7 +2817,8 @@
                                                 <a href="#recruiting" data-scroll-time="1" bk="lightblue" hov-arrow="" class="card is-anchor-rel w-inline-block">
                                                     <div class="anchor-padding-pd1">
                                                         <div class="anchor-txt-wrap">
-                                                            <div class="fsp2">Accelerate broker recruiting</div>
+                                                            <div class="fsp2">
+                                                                Consumer/Customer <br>Listing</div>
                                                             <div class="arrow-btn">
                                                                 <div class="arrow-btn-direction is-anchor">
                                                                     <div class="arrow-btn-wrap smaller">
@@ -2792,7 +2845,7 @@
                                                 <a href="#scale" hov-arrow="" bk="lightblue" class="card is-anchor-rel w-inline-block">
                                                     <div class="anchor-padding-pd1">
                                                         <div class="anchor-txt-wrap">
-                                                            <div class="fsp2">Scale operations effortlessly</div>
+                                                            <div class="fsp2">Strategy Transformation <br>and Optimization</div>
                                                             <div class="arrow-btn is-anchor">
                                                                 <div class="arrow-btn-direction is-anchor">
                                                                     <div class="arrow-btn-wrap smaller">
@@ -2825,11 +2878,11 @@
                                 <div class="section-padding-pv4">
                                     <div class="section-grid">
                                         <div class="cd6">
-                                            <h2 ch15="">Accelerate broker recruitment</h2>
+                                            <h2 ch15="">Consumer/Customer Listing</h2>
                                         </div>
                                         <div class="cd6">
-                                            <p twb="" class="fsp4">Grow your team with newfound confidence.</p>
-                                            <div class="mt2">
+                                            <p twb="" class="fsp4">In the second stage, we listen intently to your customers and analyze existing data to uncover key insights about your products and competitors. This approach ensures that strategies are grounded in the needs and preferences of your target audience, fostering impactful decisions.</p>
+                                            <!-- <div class="mt2">
                                                 <div class="number-line-wrap">
                                                     <div count-siv="" class="counter-wrap min-width">
                                                         <div class="stat-fs2">+</div>
@@ -2839,7 +2892,7 @@
                                                     <div twb="" class="fsp3">Growth in contracted agents per agency since partnering with Spark</div>
                                                     <div class="line-abs-left"></div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -2863,24 +2916,21 @@
                                                                         <div class="scroll-card-pd1">
                                                                             <div bk="bluetint" class="card is-scroll-card">
                                                                                 <div class="card-scroll-content-img">
-                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65afde24c7680b4c75c4aaba_65aef3938b205fd47362ea8d_spark_speaker.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw"
-                                                                                        srcset="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65afde24c7680b4c75c4aaba_65aef3938b205fd47362ea8d_spark_speaker-p-500.jpg 500w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65afde24c7680b4c75c4aaba_65aef3938b205fd47362ea8d_spark_speaker-p-800.jpg 800w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65afde24c7680b4c75c4aaba_65aef3938b205fd47362ea8d_spark_speaker-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65afde24c7680b4c75c4aaba_65aef3938b205fd47362ea8d_spark_speaker.jpg 1622w"
+                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="assets/imgs/logo/imac.png" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw"
                                                                                         alt="" class="img-abs" /></div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="scroll-card-pd1">
                                                                             <div bk="bluetint" class="card is-scroll-card">
                                                                                 <div class="card-scroll-content-img">
-                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9db_65a59b396a76186a46129478_outcomes-broker2%20(1).webp" loading="lazy"
-                                                                                        sizes="(max-width: 767px) 100vw, 44vw" srcset="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9db_65a59b396a76186a46129478_outcomes-broker2%2520(1)-p-500.webp 500w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9db_65a59b396a76186a46129478_outcomes-broker2%20(1).webp 800w"
+                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="assets/imgs/logo/s9.png" loading="lazy"
+                                                                                      
                                                                                         alt="" class="img-abs" /></div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="scroll-card-pd1">
                                                                             <div bk="bluetint" class="card is-scroll-card">
-                                                                                <div class="card-scroll-content-img"><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d5_outcomes-broker3.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw"
-                                                                                        srcset="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d5_outcomes-broker3-p-500.webp 500w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9d5_outcomes-broker3.webp 800w"
-                                                                                        alt="" class="img-abs" /></div>
+                                                                                <div class="card-scroll-content-img"><img src="assets/imgs/logo/lap.gif" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw" height="90%" width="90%"                                                                                        alt="" class="img-abs" /></div>
                                                                                 <div class="card-scroll-opacity is-bk-black"></div>
                                                                             </div>
                                                                         </div>
@@ -2891,13 +2941,15 @@
                                                                 <div class="div-block-9">
                                                                     <div class="card-scroll-txt is-active">
                                                                         <div move-child="" class="mwxxl">
-                                                                            <div class="mb2">
-                                                                                <div twb="" class="fs2">Differentiate your broker experience</div>
+                                                                            <div class="mb2 mt4">
+                                                                                <div twb="" class="fs2">
+                                                                                    <img src="assets/imgs/logo/logo 2.png">
+                                                                                </div>
                                                                             </div>
                                                                             <div class="mb2">
                                                                                 <div class="rich-text w-richtext">
-                                                                                    <p>Make our platform another reason why brokers join your team. Brokers grow the fastest when paired with strong agency leaders and the Spark platform handling operations.</p>
-                                                                                    <p>Best of all, you can offer the Spark platform entirely in your own brand – reinforcing the value of your team.</p>
+                                                                                    <p><b>eNovation</b> can be defined simply as a "new idea, device or method". However, innovation is often also viewed as the application of better solutions that meet new requirements, unarticulated needs, or existing market needs. Such eNovation takes place through the provision of more-effective products, processes, services, technologies, or business models</p>
+                                                                                    <!-- <p>Best of all, you can offer the Spark platform entirely in your own brand – reinforcing the value of your team.</p> -->
                                                                                 </div>
                                                                             </div>
                                                                             <div class="card-scroll-content-mobile"></div>
@@ -2905,14 +2957,23 @@
                                                                     </div>
                                                                     <div class="card-scroll-txt">
                                                                         <div move-child="" class="mwxxl">
-                                                                            <div class="mb2">
-                                                                                <div twb="" class="fs2">Sales &amp; marketing teams that work for you</div>
+                                                                            <div class="mb2 mt4">
+                                                                                <div twb="" class="fs2"><h3>Valuable insights,  meaningful actions</h3></div>
                                                                             </div>
                                                                             <div class="mb2">
-                                                                                <div class="rich-text w-richtext">
-                                                                                    <p>Unlike other big agencies, we don’t recruit brokers directly. We’ll send interested brokers your way, and our sales and marketing teams will work alongside you at recruiting
-                                                                                        brokers to your team, in your brand.</p>
-                                                                                    <p>Your growth is our business.</p>
+                                                                                <div class="" style="font-size: 15px;">
+                                                                                    <ul>
+                                                                                        <li>Streamlined processes</li>
+                                                                                        <li>Cost savings</li>
+                                                                                        <li>Knowledge management</li>
+                                                                                        <li>Real-time monitoring</li>
+                                                                                        <li>Integration</li>
+                                                                                        <li>Enhanced reporting</li>
+                                                                                        <li>Employee engagement</li>
+                                                                                        <li>Easy horizontal deployment</li>
+                                                                                        <li>Automated rewards and recognition</li>
+                                                                                    </ul>
+                                                                                    
                                                                                 </div>
                                                                             </div>
                                                                             <div class="card-scroll-content-mobile"></div>
@@ -2920,14 +2981,21 @@
                                                                     </div>
                                                                     <div class="card-scroll-txt">
                                                                         <div move-child="" class="mwxxl">
-                                                                            <div class="mb2">
-                                                                                <div twb="" class="fs2">Onboard and service brokers with confidence</div>
+                                                                            <div class="mb2 mt4">
+                                                                                <div twb="" class="fs2"><h3>Key Features</h3></div>
                                                                             </div>
                                                                             <div class="mb2">
-                                                                                <div class="rich-text w-richtext">
-                                                                                    <p>Grow your team without getting bogged down in operations. Our team handles end-to-end contracting, minimizing operational work for you and your brokers, with full reporting
-                                                                                        shown in our platform.</p>
-                                                                                    <p>Our agency partners are best in the industry at recruiting and leading brokers. We help them spend as much time with brokers – and as little time in operations – as possible.</p>
+                                                                                <div class="">
+                                                                                    <ul>
+                                                                                        <li>Cost Savings</li>
+                                                                                        <li>Digital Kaizen Management</li>
+                                                                                        <li>Real-time Monitoring</li>
+                                                                                        <li>Streamlined Processes</li>
+                                                                                        <li>Knowledge Management</li>
+                                                                                        <li>Integration and Collaboration</li>
+                                                                                        <li>Enhanced Reporting and Dashboards</li>
+                                                                                    </ul>
+                                                                                    
                                                                                 </div>
                                                                             </div>
                                                                             <div class="card-scroll-content-mobile"></div>
@@ -2968,7 +3036,27 @@
                         </div>
                     </section>
                 </div>
-                <div hide-toggle-nav="" bk="black" class="section">
+                <div class="horizontal-list-with-icons">
+                    <span data-info="Info about Analytics"><i class="fas fa-chart-bar"></i><strong>Analytics</strong></span>
+                    <span data-info="Info about Dashboard"><i class="fas fa-tachometer-alt"></i><strong>Dashboard</strong></span>
+                    <span data-info="Info about File Ready"><i class="fas fa-file-alt"></i><strong>File Ready</strong></span>
+                    <span data-info="Info about Kaizen Approach"><i class="fas fa-lightbulb"></i><strong>Kaizen Approach</strong></span>
+                    <span data-info="Info about Notification"><i class="fas fa-bell"></i><strong>Notification</strong></span>
+                    <span data-info="Info about Rewards"><i class="fas fa-award"></i><strong>Rewards</strong></span>
+                    <span data-info="Info about Paperless"><i class="fas fa-file-invoice"></i><strong>Paperless</strong></span>
+                    <span data-info="Info about Winner Board"><i class="fas fa-trophy"></i><strong>Winner Board</strong></span>
+                    <span data-info="Info about Multichannel"><i class="fas fa-exchange-alt"></i><strong>Multichannel</strong></span>
+                    <span data-info="Info about Task Tracker"><i class="fas fa-tasks"></i><strong>Task Tracker</strong></span>
+                </div>
+                
+                
+                <div id="info-box" class="info-box">
+                    <p id="info-text"></p>
+                </div>
+                
+                
+                
+                <!-- <div hide-toggle-nav="" bk="black" class="section">
                     <div class="img-section-content-wrap">
                         <div class="img-section-content">
                             <div ch25="" class="fs1">Instead of building out his own CRM and member services, Justin Jacobs used Spark.</div>
@@ -2991,7 +3079,7 @@
                     </div>
                     <div class="img-abs-wrap is-section-bk"><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea87_65a59c568a81300dcc6ace5d_outcomes-banner2%20(1).webp" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea87_65a59c568a81300dcc6ace5d_outcomes-banner2%2520(1)-p-500.webp 500w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea87_65a59c568a81300dcc6ace5d_outcomes-banner2%2520(1)-p-800.webp 800w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea87_65a59c568a81300dcc6ace5d_outcomes-banner2%2520(1)-p-1080.webp 1080w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea87_65a59c568a81300dcc6ace5d_outcomes-banner2%2520(1)-p-1600.webp 1600w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea87_65a59c568a81300dcc6ace5d_outcomes-banner2%2520(1)-p-2000.webp 2000w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea87_65a59c568a81300dcc6ace5d_outcomes-banner2%20(1).webp 2400w"
                             alt="" class="img-abs is-section-bk" /></div>
-                </div>
+                </div> -->
             </div>
             <div toggle-parent="" class="sticky-content-wrap">
                 <div id="scale" class="outcome-section-anchor">
@@ -3005,7 +3093,8 @@
                                                 <a href="#productivity" hov-arrow="" bk="lightblue" class="card is-anchor-rel w-inline-block">
                                                     <div class="anchor-padding-pd1">
                                                         <div class="anchor-txt-wrap">
-                                                            <div class="fsp2">Unlock broker productivity</div>
+                                                            <div class="fsp2">Vision Alignment<br> Workshops
+                                                            </div>
                                                             <div class="arrow-btn">
                                                                 <div class="arrow-btn-direction is-anchor">
                                                                     <div class="arrow-btn-wrap smaller">
@@ -3032,7 +3121,7 @@
                                                 <a href="#recruiting" hov-arrow="" bk="lightblue" class="card is-anchor-rel w-inline-block">
                                                     <div class="anchor-padding-pd1">
                                                         <div class="anchor-txt-wrap">
-                                                            <div class="fsp2">Accelerate broker recruiting</div>
+                                                            <div class="fsp2">Consumer/Customer <br> Listing</div>
                                                             <div class="arrow-btn">
                                                                 <div class="arrow-btn-direction is-anchor">
                                                                     <div class="arrow-btn-wrap smaller">
@@ -3059,7 +3148,7 @@
                                                 <a href="#scale" hov-arrow="" bk="lightblue" class="card is-anchor-rel w-inline-block">
                                                     <div class="anchor-padding-pd1">
                                                         <div class="anchor-txt-wrap">
-                                                            <div class="fsp2">Scale operations effortlessly</div>
+                                                            <div class="fsp2">Strategy Transformation <br>and Optimization</div>
                                                             <div class="arrow-btn is-anchor">
                                                                 <div class="arrow-btn-direction is-anchor">
                                                                     <div class="arrow-btn-wrap smaller">
@@ -3092,11 +3181,11 @@
                                 <div class="section-padding-pv4">
                                     <div class="section-grid">
                                         <div class="cd6">
-                                            <h2 twb="" ch15="">Effortlessly scale your operations</h2>
+                                            <h2 twb="" ch15="">Strategy Transformation <br>and Optimization</h2>
                                         </div>
                                         <div class="cd6">
-                                            <p twb="" class="fsp4">Grow your business while we handle your back office.</p>
-                                            <div class="mt2">
+                                            <p twb="" class="fsp4">In the final phase, we turn data and knowledge into action plans. Thanks to business expertise, in-depth analytics, and effective storytelling, we provide wisdom through practical recommendations. We help you implement, monitor, and optimise your customer-oriented strategies for sustainable growth.</p>
+                                            <!-- <div class="mt2">
                                                 <div class="number-line-wrap">
                                                     <div count-siv="" class="counter-wrap min-width is-02">
                                                         <div class="stat-fs2 count">93</div>
@@ -3105,7 +3194,7 @@
                                                     <div twb="" class="fsp3">client<br/>retention</div>
                                                     <div class="line-abs-left"></div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -3127,56 +3216,65 @@
                                                                 <div class="div-block-9">
                                                                     <div class="card-scroll-txt is-active">
                                                                         <div move-child="" class="mwxxl">
-                                                                            <div class="mb2">
-                                                                                <div twb="" class="fs2">Streamlined agency operations</div>
+                                                                            <div class="mb2 mt4">
+                                                                                <div twb="" class="fs2"><img src="assets/imgs/logo/logoexcelleta.png" height="70px" width="200px"></div>
                                                                             </div>
                                                                             <div class="mb2">
                                                                                 <div class="rich-text w-richtext">
-                                                                                    <p>Efficient onboarding, integrated reporting, and a dedicated back-office staff ensure every aspect of your agency operations is managed effectively in one place.</p>
+                                                                                    <p>Excelleta is an innovative IT solutions provider, empowering businesses with customized & insightful technology decisions.We deliver services in custom software development, data analytics, cloud solutions, and IT consulting.</p>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="number-line-wrap is-larger">
+                                                                            <!-- <div class="number-line-wrap is-larger">
                                                                                 <div class="stat-fs2">91 NPS</div>
                                                                                 <div twb="" class="fsp3">even after onboarding over 3,400+ partners in 3 years</div>
                                                                                 <div class="line-abs-left"></div>
+                                                                            </div> -->
+                                                                            <div class="">
+                                                                                
                                                                             </div>
-                                                                            <div class="card-scroll-content-mobile"></div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="card-scroll-txt">
                                                                         <div move-child="" class="mwxxl">
-                                                                            <div class="mb2">
-                                                                                <div twb="" class="fs2">Fully aligned<br/>incentives</div>
+                                                                            <div class="mb2 mt4">
+                                                                                <div twb="" class="fs2">Elevate Your Potential</div>
                                                                             </div>
-                                                                            <div class="mb2">
+                                                                            <div class="mb2 mt4">
                                                                                 <div class="rich-text w-richtext">
-                                                                                    <p>Commission, marketing, and release agreements are always upfront and in writing. We win only when you win, and we’ll earn your business every day. Our team is in the weeds
-                                                                                        with you focused on one thing: growing your book of business.</p>
+                                                                                    <p>Experience the transformative power of Excelleta's tailored IT solutions. Contact us today to embark on a journey of technological transformation, efficiency, and enduring success. Together, let's navigate the complexities of the digital era, sculpting a future where your business thrives on a foundation of innovation and adaptability.</p>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="number-line-wrap larger">
+                                                                            <!-- <div class="number-line-wrap larger">
                                                                                 <div class="stat-fs2">&gt;140%</div>
                                                                                 <div twb="" class="fsp3">year over year production growth since partnering with Spark</div>
                                                                                 <div class="line-abs-left"></div>
-                                                                            </div>
+                                                                            </div> -->
                                                                             <div class="card-scroll-content-mobile"></div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="card-scroll-txt">
                                                                         <div move-child="" class="mwxxl">
-                                                                            <div class="mb2">
-                                                                                <div twb="" class="fs2">Scale your agency partnerships</div>
+                                                                            <div class="mb2 mt4">
+                                                                                <div twb="" class="fs2">Key Features</div>
                                                                             </div>
-                                                                            <div class="mb2">
-                                                                                <div class="rich-text w-richtext">
-                                                                                    <p>Bring Spark’s infrastructure to your sub-agencies and brokers, all in your brand.</p>
+                                                                            <div class="mb2 mt4">
+                                                                                <div class="">
+                                                                                    <ul>
+                                                                                        <li>RFQ & Cost Solution</li>
+                                                                                        <li>Process Digitization</li>
+                                                                                        <li>Real-time Monitoring</li>
+                                                                                        <li>Next-Generation Living Solutionss</li>
+                                                                                        <li>Business intelligence (BI)</li>
+                                                                                        <li>Robotic Process Automation (RPA)</li>
+                                                                                        <li>Salesforce Solution Services</li>
+                                                                                    </ul>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="number-line-wrap larger">
+                                                                            <!-- <div class="number-line-wrap larger">
                                                                                 <div class="stat-fs2">50%</div>
                                                                                 <div twb="" class="fsp3">year over year growth in downline agents for agencies since partnering with Spark</div>
                                                                                 <div class="line-abs-left"></div>
-                                                                            </div>
+                                                                            </div> -->
                                                                             <div class="card-scroll-content-mobile"></div>
                                                                         </div>
                                                                     </div>
@@ -3193,22 +3291,22 @@
                                                                         <div class="scroll-card-pd1">
                                                                             <div bk="bluetint" class="card is-scroll-card">
                                                                                 <div class="card-scroll-content-img">
-                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea22_outcomes3-1.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw"
-                                                                                        srcset="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea22_outcomes3-1-p-500.webp 500w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea22_outcomes3-1-p-800.webp 800w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea22_outcomes3-1-p-1080.webp 1080w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea22_outcomes3-1.webp 1500w"
+                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="assets/imgs/logo/ex1.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw"
+                                                                                        
                                                                                         alt="" class="img-abs" /></div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="scroll-card-pd1">
                                                                             <div bk="bluetint" class="card is-scroll-card">
                                                                                 <div class="card-scroll-content-img">
-                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea23_outcomes3-2.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw"
-                                                                                        srcset="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea23_outcomes3-2-p-500.webp 500w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea23_outcomes3-2-p-800.webp 800w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea23_outcomes3-2-p-1080.webp 1080w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea23_outcomes3-2.webp 1500w"
+                                                                                    <div class="card-scroll-opacity is-bk-black"></div><img src="assets/imgs/logo/ex3.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw"
+                                                                                
                                                                                         alt="" class="img-abs" /></div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="scroll-card-pd1">
                                                                             <div bk="bluetint" class="card is-scroll-card">
-                                                                                <div class="card-scroll-content-img"><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9da_office-6.webp" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw" srcset="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9da_office-6-p-500.webp 500w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9da_office-6-p-800.webp 800w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9da_office-6-p-1080.webp 1080w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9da_office-6-p-1600.webp 1600w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9da_office-6-p-2000.webp 2000w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9da_office-6-p-2600.webp 2600w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9da_office-6.webp 2731w"
+                                                                                <div class="card-scroll-content-img"><img src="assets/imgs/logo/ex2.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, 44vw"
                                                                                         alt="" class="img-abs" /></div>
                                                                                 <div class="card-scroll-opacity is-bk-black"></div>
                                                                             </div>
@@ -3267,8 +3365,8 @@
                 <section bk="white" class="section footer">
                     <div class="global-padding is-footer">
                         <div class="w-layout-blockcontainer container-large w-container">
-                            <div class="footer-padding-pv1 is-no-ml">
-                                <div bk="blue" class="card is-footer">
+                            <div class="footer-padding-pv1 is-no-ml" style="background-color: #102a24 !important;border-radius: 25px;">
+                                <div bk="blue" class="card is-footer" style="background-color: #102a24 !important;border-radius: 25px;"> 
                                     <div>
                                         <div class="card-padding-pd2-5 is-footer">
                                             <div class="footer-top-section-grid">

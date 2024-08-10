@@ -2168,7 +2168,45 @@
                 .no-scrollbar::-webkit-scrollbar {
                     display: none; 
                 }
-            
+            /* From Uiverse.io by Spacious74 */ 
+button {
+  font-size: 1.4em;
+  padding: 0.6em 0.8em;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #000000b4;
+}
+
+.container {
+  position: relative;
+  padding: 3px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  border-radius: 0.9em;
+  transition: all 0.4s ease;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 0.9em;
+  z-index: -10;
+  filter: blur(0);
+  transition: filter 0.4s ease;
+}
+
+.container:hover::before {
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  filter: blur(1.2em);
+}
+.container:active::before {
+  filter: blur(0.2em);
+}
+
             </style>
         </div>
         <div class="loading-wrap">
@@ -2355,7 +2393,7 @@
                                             <div class="button-anim-wrap">
                                                 <a data-url="" btn-style="1" hov-txt="" href="#" class="button contracted w-inline-block">
                                                     <div class="hov-txt-wrap">
-                                                        <div split-txt="" class="fss bigger much-bigger is-agent-tag">Book a Demo</div>
+                                                        <div split-txt="" class="fss bigger much-bigger is-agent-tag"> Demo</div>
                                                     </div>
                                                 </a>
                                             </div>
@@ -2492,7 +2530,8 @@
                                             <div class="hero-graphic-row">
                                                 <div scale-from="bottom right" class="card card-animhero-01">
                                                     <div class="graphic-img-width is-24 is-smaller-mp">
-                                                        <div class="card-img-wrap is-vert-120"><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9be_hero1.webp" loading="lazy" alt="" class="img-abs is-01" /><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea85_Stocksy_comp_watermarked_3987561%203-1.jpg"
+                                                        <div class="card-img-wrap is-vert-120"><img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362e9be_hero1.webp" loading="lazy" alt="" class="img-abs is-01" />
+                                                            <img src="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea85_Stocksy_comp_watermarked_3987561%203-1.jpg"
                                                                 loading="lazy" sizes="(max-width: 767px) 192px, (max-width: 991px) 18vw, 23vw" srcset="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea85_Stocksy_comp_watermarked_3987561%25203-1-p-500.jpg 500w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea85_Stocksy_comp_watermarked_3987561%25203-1-p-800.jpg 800w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea85_Stocksy_comp_watermarked_3987561%25203-1-p-1080.jpg 1080w, https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65aef3938b205fd47362ea85_Stocksy_comp_watermarked_3987561%203-1.jpg 1400w"
                                                                 alt="" class="img-abs is-02" /></div>
                                                     </div>
@@ -3615,11 +3654,11 @@
             </div>
         </div>
     </section>
-    <section bk="white" class="section footer" >
+    <section bk="white" class="section footer">
         <div class="global-padding is-footer" >
             <div class="w-layout-blockcontainer container-large w-container" >
-                <div class="footer-padding-pv1 is-no-ml" style="background-color: #102a24 !important;">
-                    <div bk="blue" class="card is-footer" style="background-color: #102a24 !important;">
+                <div class="footer-padding-pv1 is-no-ml" style="background-color: #102a24 !important;border-radius: 25px;">
+                    <div bk="blue" class="card is-footer" style="background-color: #102a24 !important;border-radius: 25px;">
                         <div>
                             <div class="card-padding-pd2-5 is-footer">
                                 <div class="footer-top-section-grid">
