@@ -1,0 +1,41 @@
+.horizontal-list-with-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.horizontal-list-with-icons span {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid #f9f2f2;
+    border-radius: 5px;
+    height: 150px;
+    width: 130px; /* Adjust width as needed */
+    text-align: center; /* Center the text */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.horizontal-list-with-icons i {
+    margin-bottom: 5px; /* Space between icon and text */
+    color: orange; /* Set the icon color to orange */
+    font-size: 34px; /* Adjust icon size */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.horizontal-list-with-icons span:hover {
+    transform: translateY(-5px); /* Lift the span slightly */
+    background-color: #f0f0f0; /* Lighten the background */
+ /* Change border color to orange */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhance box shadow on hover */
+}
+
+.horizontal-list-with-icons span:hover i {
+    transform: scale(1.2); /* Slightly increase icon size */
+    color: #31ca23; /* Darker orange color */
+}
