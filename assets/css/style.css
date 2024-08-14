@@ -39,3 +39,50 @@
     transform: scale(1.2); /* Slightly increase icon size */
     color: #31ca23; /* Darker orange color */
 }
+
+.image-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.slider-group {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+.team-image-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-image {
+    height: 80px;
+    width: 130px;
+    border-radius: 8px;
+    padding: 0 4px;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .team-image {
+        height: 60px;
+        width: 100px;
+    }
+}
