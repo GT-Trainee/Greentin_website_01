@@ -23,8 +23,10 @@
             n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
         }(window, document);
     </script>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"/>
     <link href="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65b134f5ded31961c4d2b899_Frame%202147206848.png" rel="shortcut icon" type="image/x-icon" />
     <link href="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65b134dd4fbabbc51b18cbc9_Frame%202147206847.png" rel="apple-touch-icon" />
+    
     <script>
         history.scrollRestoration = "manual"
     </script>
@@ -2220,21 +2222,7 @@ button {
                 <div class="w-layout-blockcontainer container-large w-container">
                     <div class="nav-padding-pv1">
                         <div class="nav-wrap">
-                            <!-- <a href="/" aria-current="page" class="nav-logo-wrap w-inline-block w--current">
-                                <div class="logo-svg w-embed"><svg width="100%" height="100%" viewBox="0 0 149 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M54.8293 14.1946C49.1115 13.0867 46.3904 11.4752 46.3904 8.52749C46.3904 5.76108 49.246 4.33087 52.7062 4.33087C56.7644 4.33087 59.4385 6.45271 60.7286 10.3203L64.6927 8.01721C62.8921 2.8537 58.6054 0 52.7532 0C46.2493 0 41.6872 3.50498 41.6872 8.61478C41.6872 14.0066 46.0679 17.0013 52.0611 18.1092C57.6378 19.1701 60.2717 20.6406 60.2717 24.0046C60.2717 26.818 57.6916 29.2084 53.3982 29.2084C48.4665 29.2084 45.5102 26.442 44.5897 21.0972L40.209 23.3533C41.3176 29.1144 45.6513 33.5393 53.4453 33.5393C60.6816 33.5393 65.2504 29.0204 65.2504 23.8166C65.2504 18.6128 61.8372 15.5241 54.8293 14.1879V14.1946Z" fill="black"/>
-<path d="M54.8293 14.1946C49.1115 13.0867 46.3904 11.4752 46.3904 8.52749C46.3904 5.76108 49.246 4.33087 52.7062 4.33087C56.7644 4.33087 59.4385 6.45271 60.7286 10.3203L64.6927 8.01721C62.8921 2.8537 58.6054 0 52.7532 0C46.2493 0 41.6872 3.50498 41.6872 8.61478C41.6872 14.0066 46.0679 17.0013 52.0611 18.1092C57.6378 19.1701 60.2717 20.6406 60.2717 24.0046C60.2717 26.818 57.6916 29.2084 53.3982 29.2084C48.4665 29.2084 45.5102 26.442 44.5897 21.0972L40.209 23.3533C41.3176 29.1144 45.6513 33.5393 53.4453 33.5393C60.6816 33.5393 65.2504 29.0204 65.2504 23.8166C65.2504 18.6128 61.8372 15.5241 54.8293 14.1879V14.1946Z" fill="black" fill-opacity="0.2"/>
-<path d="M80.1283 9.40625C76.5807 9.40625 73.443 11.293 72.0118 13.5559V10.0508H67.3086V42.3077H68.6792C70.5202 42.3077 72.0118 40.8171 72.0118 38.9773V29.7716C73.49 32.1217 76.3926 33.5519 79.7117 33.5519C85.8461 33.5519 90.6837 28.8517 90.6837 21.4791C90.6837 14.1064 85.8393 9.40625 80.1215 9.40625H80.1283ZM78.7912 29.221C74.8741 29.221 71.6893 26.0853 71.6893 21.4791C71.6893 16.8729 74.8741 13.7371 78.7912 13.7371C82.7083 13.7371 85.8931 16.8729 85.8931 21.4791C85.8931 26.0853 82.7083 29.221 78.7912 29.221Z" fill="black"/>
-<path d="M80.1283 9.40625C76.5807 9.40625 73.443 11.293 72.0118 13.5559V10.0508H67.3086V42.3077H68.6792C70.5202 42.3077 72.0118 40.8171 72.0118 38.9773V29.7716C73.49 32.1217 76.3926 33.5519 79.7117 33.5519C85.8461 33.5519 90.6837 28.8517 90.6837 21.4791C90.6837 14.1064 85.8393 9.40625 80.1215 9.40625H80.1283ZM78.7912 29.221C74.8741 29.221 71.6893 26.0853 71.6893 21.4791C71.6893 16.8729 74.8741 13.7371 78.7912 13.7371C82.7083 13.7371 85.8931 16.8729 85.8931 21.4791C85.8931 26.0853 82.7083 29.221 78.7912 29.221Z" fill="black" fill-opacity="0.2"/>
-<path d="M111.636 17.1442C111.636 12.1687 108.411 9.40234 102.135 9.40234C96.3705 9.40234 92.9103 12.6253 92.9103 16.1773C92.9103 16.8219 93.0514 17.4195 93.2799 18.0238L97.4792 16.5936C97.3381 16.2243 97.3851 16.1304 97.3851 15.9021C97.3851 14.2906 98.8632 12.9073 102.135 12.9073C105.407 12.9073 106.933 14.2436 106.933 16.869V17.8359L99.6964 18.9908C95.3156 19.7294 91.627 21.8445 91.627 26.5044C91.627 30.701 94.8118 33.5547 99.421 33.5547C102.787 33.5547 105.555 31.9902 107.027 28.9015C107.168 31.0703 107.766 32.2185 108.317 32.9101H113.02C111.958 31.2046 111.636 29.8214 111.636 27.196V17.151V17.1442ZM106.933 21.9385C106.933 26.3634 104.259 29.6334 100.153 29.6334C97.8017 29.6334 96.3235 28.2972 96.3235 26.2224C96.3235 24.1476 97.842 22.8584 100.751 22.3548L106.933 21.2938V21.9385Z" fill="black"/>
-<path d="M111.636 17.1442C111.636 12.1687 108.411 9.40234 102.135 9.40234C96.3705 9.40234 92.9103 12.6253 92.9103 16.1773C92.9103 16.8219 93.0514 17.4195 93.2799 18.0238L97.4792 16.5936C97.3381 16.2243 97.3851 16.1304 97.3851 15.9021C97.3851 14.2906 98.8632 12.9073 102.135 12.9073C105.407 12.9073 106.933 14.2436 106.933 16.869V17.8359L99.6964 18.9908C95.3156 19.7294 91.627 21.8445 91.627 26.5044C91.627 30.701 94.8118 33.5547 99.421 33.5547C102.787 33.5547 105.555 31.9902 107.027 28.9015C107.168 31.0703 107.766 32.2185 108.317 32.9101H113.02C111.958 31.2046 111.636 29.8214 111.636 27.196V17.151V17.1442ZM106.933 21.9385C106.933 26.3634 104.259 29.6334 100.153 29.6334C97.8017 29.6334 96.3235 28.2972 96.3235 26.2224C96.3235 24.1476 97.842 22.8584 100.751 22.3548L106.933 21.2938V21.9385Z" fill="black" fill-opacity="0.2"/>
-<path d="M119.383 13.9223V10.0547H114.68V32.9112H119.383V20.8854C119.383 16.8297 121.735 13.835 125.101 13.835C125.699 13.835 126.297 13.9291 126.901 14.1104L127.688 9.63843C127.09 9.49742 126.579 9.41016 125.981 9.41016C122.843 9.41016 120.633 11.2097 119.39 13.9291L119.383 13.9223Z" fill="black"/>
-<path d="M119.383 13.9223V10.0547H114.68V32.9112H119.383V20.8854C119.383 16.8297 121.735 13.835 125.101 13.835C125.699 13.835 126.297 13.9291 126.901 14.1104L127.688 9.63843C127.09 9.49742 126.579 9.41016 125.981 9.41016C122.843 9.41016 120.633 11.2097 119.39 13.9291L119.383 13.9223Z" fill="black" fill-opacity="0.2"/>
-<path d="M138.921 17.9721L146.991 10.0489H141.226L133.432 17.7438V4.09302C133.432 2.18608 131.886 0.648438 129.985 0.648438H128.729V32.9053H133.432V23.4109L135.555 21.2891L142.885 32.8986H148.375L138.921 17.9654V17.9721Z" fill="black"/>
-<path d="M138.921 17.9721L146.991 10.0489H141.226L133.432 17.7438V4.09302C133.432 2.18608 131.886 0.648438 129.985 0.648438H128.729V32.9053H133.432V23.4109L135.555 21.2891L142.885 32.8986H148.375L138.921 17.9654V17.9721Z" fill="black" fill-opacity="0.2"/>
-<path class= "spark-icon" d="M32.4524 17.1826V16.3903C23.5969 15.88 17.1333 8.67524 16.6227 0H15.8298C15.3192 8.67524 8.68085 15.88 0 16.3903V17.1826C8.68085 17.6929 15.3192 24.7231 15.8298 33.5729H16.6227C17.1333 24.7231 23.6036 17.6929 32.4524 17.1826Z" fill="#D4414F"/>
-</svg></div>
-                            </a> -->
+                          
                             <style>
                                 .responsive-logo {
                                     max-height: 5vw;
@@ -2243,7 +2231,7 @@ button {
                             
                                 @media (min-width: 600px) {
                                     .responsive-logo {
-                                        max-height: 4vw;
+                                        max-height: 5vw;
                                     }
                                 }
                             
@@ -2337,21 +2325,11 @@ button {
                     <div class="w-layout-blockcontainer container-large w-container">
                         <div class="nav-padding-pv1">
                             <div class="nav-wrap">
-                                <a href="/" aria-current="page" class="nav-logo-wrap w-inline-block w--current">
-                                    <div class="logo-svg w-embed"><svg width="100%" height="100%" viewBox="0 0 149 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M54.8293 14.1946C49.1115 13.0867 46.3904 11.4752 46.3904 8.52749C46.3904 5.76108 49.246 4.33087 52.7062 4.33087C56.7644 4.33087 59.4385 6.45271 60.7286 10.3203L64.6927 8.01721C62.8921 2.8537 58.6054 0 52.7532 0C46.2493 0 41.6872 3.50498 41.6872 8.61478C41.6872 14.0066 46.0679 17.0013 52.0611 18.1092C57.6378 19.1701 60.2717 20.6406 60.2717 24.0046C60.2717 26.818 57.6916 29.2084 53.3982 29.2084C48.4665 29.2084 45.5102 26.442 44.5897 21.0972L40.209 23.3533C41.3176 29.1144 45.6513 33.5393 53.4453 33.5393C60.6816 33.5393 65.2504 29.0204 65.2504 23.8166C65.2504 18.6128 61.8372 15.5241 54.8293 14.1879V14.1946Z" fill="black"/>
-<path d="M54.8293 14.1946C49.1115 13.0867 46.3904 11.4752 46.3904 8.52749C46.3904 5.76108 49.246 4.33087 52.7062 4.33087C56.7644 4.33087 59.4385 6.45271 60.7286 10.3203L64.6927 8.01721C62.8921 2.8537 58.6054 0 52.7532 0C46.2493 0 41.6872 3.50498 41.6872 8.61478C41.6872 14.0066 46.0679 17.0013 52.0611 18.1092C57.6378 19.1701 60.2717 20.6406 60.2717 24.0046C60.2717 26.818 57.6916 29.2084 53.3982 29.2084C48.4665 29.2084 45.5102 26.442 44.5897 21.0972L40.209 23.3533C41.3176 29.1144 45.6513 33.5393 53.4453 33.5393C60.6816 33.5393 65.2504 29.0204 65.2504 23.8166C65.2504 18.6128 61.8372 15.5241 54.8293 14.1879V14.1946Z" fill="black" fill-opacity="0.2"/>
-<path d="M80.1283 9.40625C76.5807 9.40625 73.443 11.293 72.0118 13.5559V10.0508H67.3086V42.3077H68.6792C70.5202 42.3077 72.0118 40.8171 72.0118 38.9773V29.7716C73.49 32.1217 76.3926 33.5519 79.7117 33.5519C85.8461 33.5519 90.6837 28.8517 90.6837 21.4791C90.6837 14.1064 85.8393 9.40625 80.1215 9.40625H80.1283ZM78.7912 29.221C74.8741 29.221 71.6893 26.0853 71.6893 21.4791C71.6893 16.8729 74.8741 13.7371 78.7912 13.7371C82.7083 13.7371 85.8931 16.8729 85.8931 21.4791C85.8931 26.0853 82.7083 29.221 78.7912 29.221Z" fill="black"/>
-<path d="M80.1283 9.40625C76.5807 9.40625 73.443 11.293 72.0118 13.5559V10.0508H67.3086V42.3077H68.6792C70.5202 42.3077 72.0118 40.8171 72.0118 38.9773V29.7716C73.49 32.1217 76.3926 33.5519 79.7117 33.5519C85.8461 33.5519 90.6837 28.8517 90.6837 21.4791C90.6837 14.1064 85.8393 9.40625 80.1215 9.40625H80.1283ZM78.7912 29.221C74.8741 29.221 71.6893 26.0853 71.6893 21.4791C71.6893 16.8729 74.8741 13.7371 78.7912 13.7371C82.7083 13.7371 85.8931 16.8729 85.8931 21.4791C85.8931 26.0853 82.7083 29.221 78.7912 29.221Z" fill="black" fill-opacity="0.2"/>
-<path d="M111.636 17.1442C111.636 12.1687 108.411 9.40234 102.135 9.40234C96.3705 9.40234 92.9103 12.6253 92.9103 16.1773C92.9103 16.8219 93.0514 17.4195 93.2799 18.0238L97.4792 16.5936C97.3381 16.2243 97.3851 16.1304 97.3851 15.9021C97.3851 14.2906 98.8632 12.9073 102.135 12.9073C105.407 12.9073 106.933 14.2436 106.933 16.869V17.8359L99.6964 18.9908C95.3156 19.7294 91.627 21.8445 91.627 26.5044C91.627 30.701 94.8118 33.5547 99.421 33.5547C102.787 33.5547 105.555 31.9902 107.027 28.9015C107.168 31.0703 107.766 32.2185 108.317 32.9101H113.02C111.958 31.2046 111.636 29.8214 111.636 27.196V17.151V17.1442ZM106.933 21.9385C106.933 26.3634 104.259 29.6334 100.153 29.6334C97.8017 29.6334 96.3235 28.2972 96.3235 26.2224C96.3235 24.1476 97.842 22.8584 100.751 22.3548L106.933 21.2938V21.9385Z" fill="black"/>
-<path d="M111.636 17.1442C111.636 12.1687 108.411 9.40234 102.135 9.40234C96.3705 9.40234 92.9103 12.6253 92.9103 16.1773C92.9103 16.8219 93.0514 17.4195 93.2799 18.0238L97.4792 16.5936C97.3381 16.2243 97.3851 16.1304 97.3851 15.9021C97.3851 14.2906 98.8632 12.9073 102.135 12.9073C105.407 12.9073 106.933 14.2436 106.933 16.869V17.8359L99.6964 18.9908C95.3156 19.7294 91.627 21.8445 91.627 26.5044C91.627 30.701 94.8118 33.5547 99.421 33.5547C102.787 33.5547 105.555 31.9902 107.027 28.9015C107.168 31.0703 107.766 32.2185 108.317 32.9101H113.02C111.958 31.2046 111.636 29.8214 111.636 27.196V17.151V17.1442ZM106.933 21.9385C106.933 26.3634 104.259 29.6334 100.153 29.6334C97.8017 29.6334 96.3235 28.2972 96.3235 26.2224C96.3235 24.1476 97.842 22.8584 100.751 22.3548L106.933 21.2938V21.9385Z" fill="black" fill-opacity="0.2"/>
-<path d="M119.383 13.9223V10.0547H114.68V32.9112H119.383V20.8854C119.383 16.8297 121.735 13.835 125.101 13.835C125.699 13.835 126.297 13.9291 126.901 14.1104L127.688 9.63843C127.09 9.49742 126.579 9.41016 125.981 9.41016C122.843 9.41016 120.633 11.2097 119.39 13.9291L119.383 13.9223Z" fill="black"/>
-<path d="M119.383 13.9223V10.0547H114.68V32.9112H119.383V20.8854C119.383 16.8297 121.735 13.835 125.101 13.835C125.699 13.835 126.297 13.9291 126.901 14.1104L127.688 9.63843C127.09 9.49742 126.579 9.41016 125.981 9.41016C122.843 9.41016 120.633 11.2097 119.39 13.9291L119.383 13.9223Z" fill="black" fill-opacity="0.2"/>
-<path d="M138.921 17.9721L146.991 10.0489H141.226L133.432 17.7438V4.09302C133.432 2.18608 131.886 0.648438 129.985 0.648438H128.729V32.9053H133.432V23.4109L135.555 21.2891L142.885 32.8986H148.375L138.921 17.9654V17.9721Z" fill="black"/>
-<path d="M138.921 17.9721L146.991 10.0489H141.226L133.432 17.7438V4.09302C133.432 2.18608 131.886 0.648438 129.985 0.648438H128.729V32.9053H133.432V23.4109L135.555 21.2891L142.885 32.8986H148.375L138.921 17.9654V17.9721Z" fill="black" fill-opacity="0.2"/>
-<path class= "spark-icon" d="M32.4524 17.1826V16.3903C23.5969 15.88 17.1333 8.67524 16.6227 0H15.8298C15.3192 8.67524 8.68085 15.88 0 16.3903V17.1826C8.68085 17.6929 15.3192 24.7231 15.8298 33.5729H16.6227C17.1333 24.7231 23.6036 17.6929 32.4524 17.1826Z" fill="#D4414F"/>
-</svg></div>
-                                </a>
+                                <a href="index.html">
+                                    <div class="logo-svg w-embed">
+                                        <img src="assets/imgs/logo/GreenTin.png" style="max-height: 200px; width: auto;" class="responsive-logo">
+                                    </div>
+                                   </a>
                                 <div id="w-node-afc2bf65-078c-5e29-487b-4ce145b7853b-45b78534" class="nav-links-wrap">
                                     <a hov-txt="" href="home.html" class="nav-link w-inline-block">
                                         <div class="hov-txt-wrap">
@@ -2431,7 +2409,7 @@ button {
                             <div class="footer-top-section-grid">
                                 <div hide-t="" class="footer-newsletter-cd4-ct8">
                                     <div>
-                                        <div ch25="" class="fsp1">Stay connected with the country&#x27;s fastest-growing Medicare brokerage<a href="#"><strong><br/></strong></a></div>
+                                        <div ch25="" class="fsp1">Our innovative solutions and a flexible engagement model make clients stay ahead of the curve, drive revenues, and enhance market position.<a href="#"><strong><br/></strong></a></div>
                                     </div>
                                     <div class="form-footer-mt2 w-form">
                                         <form id="email-form" name="email-form" data-name="Email Form" method="get" data-wf-page-id="65aef3938b205fd47362e930" data-wf-element-id="de3294ff-9b1b-f990-62c2-a6cdc36b2726">
@@ -3724,12 +3702,12 @@ Performance Tracking</p>
      <img src="assets/imgs/logo/GreenTin.png" height="70px"></div>
                                         </a>
                                         <div>
-                                            <div ch25="" class="fsp1">Stay connected with the country&#x27;s fastest-growing Medicare brokerage<a href="#"><strong><br/></strong></a></div>
+                                            <div ch25="" class="fsp1">Our innovative solutions and a flexible engagement model make clients stay ahead of the curve, drive revenues, and enhance market position.<a href="#"><strong><br/></strong></a></div>
                                         </div>
                                         <div class="form-footer-mt2 w-form">
                                             <form id="email-form" name="email-form" data-name="Email Form" method="get" data-wf-page-id="65aef3938b205fd47362e930" data-wf-element-id="f4b55e8a-b9aa-164d-9e60-45c512156b52">
                                                 <div class="field-wrap"><input class="form-field-footer-fsp1 smaller-fs-mobile w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Email address" type="text" id="name-2" required="" /><input type="submit" data-wait="Please wait..."
-                                                        class="button is-form-fss w-button" value="Submit"  style="background-color: #046922 !important;"/></div>
+                                                        class="button is-form-fss w-button" value="Submit"  style="background-color: #046922 !important;color: white;"/></div>
                                             </form>
                                             <div class="success w-form-done">
                                                 <div class="fsp1">Thank you! <br/>Your submission has been received.</div>
@@ -3759,7 +3737,7 @@ Performance Tracking</p>
                                     </div>
                                     <div class="footer-links-wrap-cd2-ct2-cl2-cp2 sd7 menu-links">
                                         <div inv="" class="footer-links-category-mb1 less-margin-mobile">
-                                            <div class="fsp1-fwm">Company</div>
+                                            <div class="fsp1-fwm">Home</div>
                                         </div>
                                         <a href="home.html" class="footer-link w-inline-block">
                                             <div class="fsp1">Services</div>
@@ -3771,17 +3749,9 @@ Performance Tracking</p>
                                             <a href="resources.html" class="footer-link w-inline-block">
                                                 <div class="fsp1">Resources</div>
                                             </a>
-                                            <!-- <div class="hide w-dyn-list">
-                                                <div role="list" class="w-dyn-items">
-                                                    <div role="listitem" class="cus-story-nav w-dyn-item"><a href="/customer-stories/justin" class="cus-story-nav-link w-inline-block"></a></div>
-                                                    <div role="listitem" class="cus-story-nav w-dyn-item"><a href="/customer-stories/joanna" class="cus-story-nav-link w-inline-block"></a></div>
-                                                    <div role="listitem" class="cus-story-nav w-dyn-item"><a href="/customer-stories/gilberto" class="cus-story-nav-link w-inline-block"></a></div>
-                                                    <div role="listitem" class="cus-story-nav w-dyn-item"><a href="/customer-stories/osley-herrera" class="cus-story-nav-link w-inline-block"></a></div>
-                                                </div>
-                                            </div> -->
                                         </div>
-                                        <a href="team.html" class="footer-link w-inline-block">
-                                            <div class="fsp1">Company</div>
+                                        <a href="index.html" class="footer-link w-inline-block">
+                                            <div class="fsp1">Home</div>
                                         </a>
                                         <a href="resources.html" class="footer-link w-inline-block">
                                             <div class="fsp1">Resources</div>
@@ -3789,35 +3759,35 @@ Performance Tracking</p>
                                     </div>
                                     <div class="footer-links-wrap-cd2-ct2-cl2-cp2 sd7">
                                         <div class="footer-links-category-mb1 less-margin-mobile">
-                                            <div class="fsp1-fwm">Company</div>
+                                            <div class="fsp1-fwm">Resources</div>
                                         </div>
                                         <a href="/careers" target="_blank" class="footer-link w-inline-block">
-                                            <div split-txt="" class="fsp1">Careers</div>
+                                            <div split-txt="" class="fsp1">Events</div>
                                         </a>
                                         <a href="team.html" class="footer-link w-inline-block">
-                                            <div split-txt="" class="fsp1">About Us</div>
+                                            <div split-txt="" class="fsp1">Case Studies</div>
                                         </a>
                                         <a href="/faqs" class="footer-link w-inline-block">
-                                            <div split-txt="" class="fsp1">FAQ</div>
+                                            <div split-txt="" class="fsp1">Success Stories</div>
                                         </a>
                                         <a href="/licensing" class="footer-link w-inline-block">
-                                            <div split-txt="" class="fsp1">Licensing</div>
+                                            <div split-txt="" class="fsp1">Industry News</div>
                                         </a>
                                         <a href="mailto:support@sparkadvisors.com?subject=Enquiry" class="footer-link w-inline-block">
-                                            <div split-txt="" class="fsp1">Contact Us</div>
+                                            <div split-txt="" class="fsp1">Company News</div>
                                         </a>
                                     </div>
                                     <div class="footer-links-wrap-cd2-ct2-cl2-cp2">
                                         <div class="footer-links-category-mb1 less-margin-mobile">
-                                            <div class="fsp1-fwm">Agents</div>
+                                            <div class="fsp1-fwm">Products</div>
                                         </div>
                                         <a href="/why-spark" class="footer-link w-inline-block">
-                                            <div split-txt="" class="fsp1">Why Spark</div>
+                                            <div split-txt="" class="fsp1">MyEnovation</div>
                                         </a>
                                         <a href="/roi-calculator" class="footer-link w-inline-block">
-                                            <div split-txt="" class="fsp1">ROI Calculator</div>
+                                            <div split-txt="" class="fsp1">Excelleta</div>
                                         </a>
-                                        <a href="/sales-directory" class="footer-link w-inline-block">
+                                        <!-- <a href="/sales-directory" class="footer-link w-inline-block">
                                             <div split-txt="" class="fsp1">Sales Directory</div>
                                         </a>
                                         <a href="resources.html" class="footer-link w-inline-block">
@@ -3827,15 +3797,21 @@ Performance Tracking</p>
                                             <div split-txt="" class="fsp1">Contracts</div>
                                         </a>
                                         <a href="home.html" class="footer-link w-inline-block">
-                                            <div split-txt="" class="fsp1"> Login</div>
+                                            <div split-txt="" class="fsp1"> Login</div> -->
                                         </a>
                                     </div>
                                     <div class="footer-links-wrap-cd2-ct2-cl2-cp2">
                                         <div class="footer-links-category-mb1 less-margin-mobile">
-                                            <div class="fsp1-fwm">Partners</div>
+                                            <div class="fsp1-fwm">Services</div>
                                         </div>
                                         <a href="/partner-program" class="footer-link w-inline-block">
-                                            <div split-txt="" class="fsp1">Partner Program</div>
+                                            <div split-txt="" class="fsp1">IoT</div>
+                                        </a>
+                                        <a href="/partner-program" class="footer-link w-inline-block">
+                                            <div split-txt="" class="fsp1">RPA</div>
+                                        </a>
+                                        <a href="/partner-program" class="footer-link w-inline-block">
+                                            <div split-txt="" class="fsp1">Sales Force</div>
                                         </a>
                                     </div>
                                 </div>
@@ -3851,11 +3827,30 @@ Performance Tracking</p>
 <path d="M21.1429 0.453125H2.85714C1.28 0.453125 0 1.78646 0 3.42932V22.4769C0 24.1198 1.28 25.4531 2.85714 25.4531H21.1429C22.72 25.4531 24 24.1198 24 22.4769V3.42932C24 1.78646 22.72 0.453125 21.1429 0.453125ZM7.42857 9.97693V21.2865H4V9.97693H7.42857ZM4 6.68527C4 5.85193 4.68571 5.21503 5.71429 5.21503C6.74286 5.21503 7.38857 5.85193 7.42857 6.68527C7.42857 7.5186 6.78857 8.19122 5.71429 8.19122C4.68571 8.19122 4 7.5186 4 6.68527ZM20 21.2865H16.5714C16.5714 21.2865 16.5714 15.7746 16.5714 15.3341C16.5714 14.1436 16 12.9531 14.5714 12.9293H14.5257C13.1429 12.9293 12.5714 14.1555 12.5714 15.3341C12.5714 15.8757 12.5714 21.2865 12.5714 21.2865H9.14286V9.97693H12.5714V11.5007C12.5714 11.5007 13.6743 9.97693 15.8914 9.97693C18.16 9.97693 20 11.6019 20 14.8936V21.2865Z" fill="white"/>
 </svg></div>
                                         </a>
+                                        <a href="https://www.google.com/" target="_blank" class="social-link w-inline-block">
+                                            <div class="social-link-svg w-embed">
+                                                <svg width="100%" height="100%" viewBox="0 0 22 22" style="border-radius: 4px;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="24" height="24" fill="white"/>
+                                                    <!-- Black Icon -->
+                                                    <path d="M21.6 10.2273H12V13.7727H17.6528C17.0441 16.1818 14.7722 17.6818 12 17.6818C8.736 17.6818 6.18182 15.1276 6.18182 11.8636C6.18182 8.59956 8.736 6.04545 12 6.04545C13.4909 6.04545 14.8 6.61818 15.7591 7.57273L18.2727 5.04545C16.9364 3.72727 14.6364 2.72727 12 2.72727C6.81818 2.72727 2.72727 6.81818 2.72727 12C2.72727 17.1818 6.81818 21.2727 12 21.2727C16.9455 21.2727 21.2727 17.2273 21.2727 12C21.2727 11.4909 21.2273 11.0091 21.1455 10.5455L21.6 10.2273Z" fill="black"/>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                        <a href="https://twitter.com/" target="_blank" class="social-link w-inline-block">
+                                            <div class="social-link-svg w-embed">
+                                                <svg width="100%" height="100%" viewBox="0 0 22 22" fill="none" style="border-radius: 4px;" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="24" height="24" fill="white"/>
+                                                    <!-- Black Twitter Icon -->
+                                                    <path d="M23.953 4.569c-.885.392-1.83.656-2.825.775 1.014-.609 1.794-1.574 2.163-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.717 0-4.917 2.2-4.917 4.917 0 .39.045.765.127 1.125C7.69 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.708.87 3.216 2.188 4.096-.807-.026-1.566-.247-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.376 4.604 3.416-1.68 1.319-3.809 2.105-6.102 2.105-.396 0-.79-.023-1.17-.068 2.179 1.397 4.768 2.209 7.557 2.209 9.054 0 14.002-7.503 14.002-14.002 0-.213-.004-.425-.014-.637.961-.69 1.797-1.56 2.457-2.548l-.047-.02z" fill="black"/>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                        
+                                        
                                     </div>
                                     <div class="footer-bottom-line-mb1-5-mt1-5"></div>
                                     <div class="mt1-5">
-                                        <div op60="" class="terms-txt">Not affiliated with the United States government or federal Medicare program. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please
-                                            contact Medicare.gov or 1-800-MEDICARE to get information on all of your options© 2022 Spark Health Inc. All Rights Reserved. Use of this web site constitutes acceptance of the <a href="/terms-of-service" class="link-underline">Terms of Service</a>                                            and<a href="/privacy-policy" class="link-underline"> </a><a href="/privacy-policy" class="link-underline">Privacy Policy &amp; Notices at Collection</a>.</div>
+                                        <div op60="" class="terms-txt">© 2024 GREENTIN. ALL RIGHTS RESERVED.</a>.</div>
                                     </div>
                                 </div>
                             </div>
