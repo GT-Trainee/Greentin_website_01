@@ -14,7 +14,7 @@
     <meta content="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/65afdec0fb253ba2795744d2_Group%202147207520.jpg" property="twitter:image" />
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.prod.website-files.com/65aef3938b205fd47362e931/css/spark-00.webflow.7cda10603.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
         ! function(o, c) {
@@ -2007,7 +2007,13 @@
                     }
 
                     .toggle-txt {
+                        /* background-color: #046922; */
                         transition-delay: 0.6s;
+                    }
+                    
+                    .toggle-txt-fsd div{
+                         /* background-color: #046922; */
+                         transition-delay: 0.6s;
                     }
                 </style>
             </div>
@@ -2216,8 +2222,8 @@ button {
 .container:active::before {
   filter: blur(0.2em);
 
-
-  .responsive-logo {
+}
+.responsive-logo {
     max-height: 70px;
     width: auto; /* Allows the width to adjust according to height */
     max-width: 100%; /* Ensures the logo doesn't exceed the container size */
@@ -2226,16 +2232,21 @@ button {
 
 @media (max-width: 768px) {
     .responsive-logo {
-        max-height: 50px; /* Smaller size for tablets */
+        max-height: 70px !important; /* Smaller size for tablets */
     }
 }
 
 @media (max-width: 480px) {
     .responsive-logo {
-        max-height: 40px; /* Even smaller size for mobile */
+        max-height: 70px !important; /* Even smaller size for mobile */
     }
+    
 }
-
+@media (max-width: 320px) {
+    .responsive-logo {
+        max-height: 70px !important; /* Even smaller size for mobile */
+    }
+    
 }
 
             </style>
@@ -2388,7 +2399,7 @@ button {
                                 <div id="w-node-c1b03bbb-e6eb-fe72-ad8b-a0798049310e-45b78534" class="div-block-3">
                                     <div hide-mp="" class="nav-btn">
                                         <div class="button-group">
-                                            <div class="button-anim-wrap">
+                                            <div class="button-anim-wrap1">
                                                 <a data-url="" btn-style="2" hov-txt="" href="home.html" class="button contracted w-inline-block">
                                                     <div class="hov-txt-wrap">
                                                         <div split-txt="" class="fss bigger much-bigger is-agent-tag">Log in</div>
@@ -2438,7 +2449,7 @@ button {
                                     </div>
                                     <div class="btn-mpbile-menu">
                                         <div class="button-group">
-                                            <div class="button-anim-wrap">
+                                            <div class="button-anim-wrap1">
                                                 <a data-url="" btn-style="2" hov-txt="" href="home.html" class="button contracted w-inline-block">
                                                     <div class="hov-txt-wrap">
                                                         <div split-txt="" class="fss bigger much-bigger is-agent-tag">Log in</div>
@@ -2484,7 +2495,7 @@ button {
                                 </div>
                                 <div class="footer-btn-wrap">
                                     <div class="button-group">
-                                        <div class="button-anim-wrap">
+                                        <div class="button-anim-wrap1">
                                             <a data-url="" btn-style="2" hov-txt="" href="home.html" class="button contracted w-inline-block">
                                                 <div class="hov-txt-wrap">
                                                     <div split-txt="" class="fss bigger much-bigger is-agent-tag">Log in</div>
@@ -3732,7 +3743,7 @@ Performance Tracking</p>
                                     </div>
                                     <div class="footer-btn-wrap">
                                         <div class="button-group">
-                                            <div class="button-anim-wrap">
+                                            <div class="button-anim-wrap1">
                                                 <a data-url="" btn-style="2" hov-txt="" href="home.html" class="button contracted w-inline-block">
                                                     <div class="hov-txt-wrap">
                                                         <div split-txt="" class="fss bigger much-bigger is-agent-tag">Log in</div>
