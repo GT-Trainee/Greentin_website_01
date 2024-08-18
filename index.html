@@ -1859,6 +1859,14 @@
                         background-color: #046922;
                         color: white;
                     }
+
+                    .button-anim-wrap1 .button{
+                        background-color: white;
+                        color: black;
+                    }
+                    .button-anim-wrap1:hover .button {
+                        top: -0.25rem;
+                    }
                     .button-anim-wrap:hover .button {
                         top: -0.25rem;
                     }
@@ -2207,13 +2215,34 @@ button {
 }
 .container:active::before {
   filter: blur(0.2em);
+
+
+  .responsive-logo {
+    max-height: 70px;
+    width: auto; /* Allows the width to adjust according to height */
+    max-width: 100%; /* Ensures the logo doesn't exceed the container size */
+    height: auto; /* Maintains aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .responsive-logo {
+        max-height: 50px; /* Smaller size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-logo {
+        max-height: 40px; /* Even smaller size for mobile */
+    }
+}
+
 }
 
             </style>
         </div>
         <div class="loading-wrap">
             <div class="loading-svg-wrap">
-                <img src="assets/imgs/logo/GreenTin-02.png" height="180px">
+                <img src="assets/imgs/logo/GreenTin-02.png" height="180px" style="text-align: center;justify-content: center;">
             </div>
            
         </div>
@@ -2223,29 +2252,13 @@ button {
                     <div class="nav-padding-pv1">
                         <div class="nav-wrap">
                           
-                            <style>
-                                .responsive-logo {
-                                    max-height: 5vw;
-                                    width: auto;
-                                }
-                            
-                                @media (min-width: 600px) {
-                                    .responsive-logo {
-                                        max-height: 5vw;
-                                    }
-                                }
-                            
-                                @media (min-width: 992px) {
-                                    .responsive-logo {
-                                        max-height: 5vw;
-                                    }
-                                }
+                          
                             </style>
                             
                            <a href="index.html">
-                            <div class="logo-svg w-embed">
-                                <img src="assets/imgs/logo/GreenTin.png" style="max-height: 5vw; width: auto;" class="responsive-logo">
-                            </div>
+                            
+                                <img src="assets/imgs/logo/GreenTin.png" style="max-height: 70px; width: auto;" class="responsive-logo">
+                            
                            </a>
                             <div id="w-node-afc2bf65-078c-5e29-487b-4ce145b7853b-45b78534" class="nav-links-wrap">
                                 <a hov-txt="" href="home.html" class="nav-link w-inline-block">
@@ -2292,10 +2305,10 @@ button {
                             <div id="w-node-c1b03bbb-e6eb-fe72-ad8b-a0798049310e-45b78534" class="div-block-3">
                                 <div hide-mp="" class="nav-btn">
                                     <div class="button-group">
-                                        <div class="button-anim-wrap">
+                                        <div class="button-anim-wrap1">
                                             <a data-url="" btn-style="2" hov-txt="" href="home.html" class="button contracted w-inline-block">
-                                                <div class="hov-txt-wrap">
-                                                    <div split-txt="" class="fss bigger much-bigger is-agent-tag">Log in</div>
+                                                <div class="">
+                                                    <div split-txt="" class="">Log in</div>
                                                 </div>
                                             </a>
                                         </div>
